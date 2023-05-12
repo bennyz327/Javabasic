@@ -45,6 +45,26 @@ public class module_3_5_controlFlow_ForWhile {
 //		}
 		
 
+//break和continue用法
+//內層迴圈遇到6就跳出該迴圈
+//		for(int i=1; i<=19; i++) {
+//			for(int j=2; j<=19; j++) {
+//				System.out.printf("%02dX%02d=%03d\t",j,i,(j*i));
+//				if(j>5)break;/*只有一個指令可以省略大括號*/
+//			}
+//			System.out.println("");
+//			
+//		}
+//內層迴圈遇到5就跳出該迴圈的"那次迴圈"，導致不會秀出乘法表5的那列
+//		for(int i=1; i<=19; i++) {
+//			for(int j=2; j<=19; j++) {
+//				if(j==5)continue;
+//				System.out.printf("%02dX%02d=%03d\t",j,i,(j*i));
+//			}
+//			System.out.println("");
+//		}
+		
+		
 //		
 		
 		

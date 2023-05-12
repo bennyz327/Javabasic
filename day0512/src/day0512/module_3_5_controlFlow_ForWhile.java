@@ -83,9 +83,28 @@ public class module_3_5_controlFlow_ForWhile {
 		
 		
 //While用例
-		int ans = (int)(Math.random()*100+1);/*強制轉型會捨去小數點*/
-		String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
-		while(!numStr.equals("exit")) {
+//		int ans = (int)(Math.random()*100+1);	//強制轉型會捨去小數點
+//		String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+//		while(!numStr.equals("exit")) {
+//			int num = Integer.parseInt(numStr);
+//			if(num>ans) {
+//				System.out.println("小一點");
+//			}
+//			if(num<ans){
+//				System.out.println("大一點");
+//			}
+//			if(num==ans) {
+//				System.out.println("答對了");
+//				break;
+//			}
+//			numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+//		}
+
+			
+//do-while寫法
+		int ans = (int)(Math.random()*100+1);
+		do{
+			String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
 			int num = Integer.parseInt(numStr);
 			if(num>ans) {
 				System.out.println("小一點");
@@ -97,12 +116,13 @@ public class module_3_5_controlFlow_ForWhile {
 				System.out.println("答對了");
 				break;
 			}
-			numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
-		}
-
+		}while(true);
 		
-//		
-
+		/*
+		 * while與do-while意義上的差別
+		 * while	屬於前測迴圈，是在執行 前 測試條件的迴圈
+		 * do-while	則是後測迴圈，是在執行 後 測試條件的迴圈*/
+		
 
 	}
 

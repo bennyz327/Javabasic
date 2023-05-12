@@ -94,13 +94,15 @@ public class module_3_5_controlFlow_ForWhile {
 				System.out.println("大一點");
 			}
 			if(num==ans) {
-				System.out.println("答對了");				
+				System.out.println("答對了");
+				break;
 			}
 			numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
 		}
 
 		
 //		
+
 
 	}
 

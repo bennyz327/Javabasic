@@ -6,7 +6,7 @@ public class module_3_1 {
 
 	public static void main(String[] args) {
 		
-		//用scanner物件(?) 獲取使用者輸入的資料
+		//用scanner物件的方法，獲取使用者輸入的資料
 		Scanner sc=new Scanner(System.in);
 		System.out.println("請輸入年齡");
 		//test

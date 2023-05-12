@@ -1,5 +1,7 @@
 package day0512;
 
+import javax.swing.JOptionPane;
+
 public class module_3_5_controlFlow_ForWhile {
 
 	public static void main(String[] args) {
@@ -63,14 +65,42 @@ public class module_3_5_controlFlow_ForWhile {
 //			}
 //			System.out.println("");
 //		}
+
 		
+//fot搭配標籤語法
+//		tag:for(int i=1; i<=19; i++) {
+//			for(int j=2; j<=19; j++) {
+//				/*if(j==5)break tag;	可以直接break指定的標籤的迴圈*/
+//				/*if(j==5)continue tag;	可以直接continue指定的標籤的迴圈*/
+//				System.out.printf("%02dX%02d=%03d\t",j,i,(j*i));
+//			}
+//			System.out.println("");
+//		}
+		
+		
+//for的本質
+//		for(;;);
+		
+		
+//While用例
+		int ans = (int)(Math.random()*100+1);/*強制轉型會捨去小數點*/
+		String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+		while(!numStr.equals("exit")) {
+			int num = Integer.parseInt(numStr);
+			if(num>ans) {
+				System.out.println("小一點");
+			}
+			if(num<ans){
+				System.out.println("大一點");
+			}
+			if(num==ans) {
+				System.out.println("答對了");				
+			}
+			numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+		}
+
 		
 //		
-		
-		
-//for的本質		
-//		int i=0;
-//		for(i++;ture;i++); 
 
 	}
 

@@ -121,9 +121,9 @@ public class module_3_5_controlFlow_ForWhile {
 		/*
 		 * while與do-while意義上的差別
 		 * while	屬於前測迴圈，是在執行 前 測試條件的迴圈
-		 * do-while	則是後測迴圈，是在執行 後 測試條件的迴圈*/
-		
+		 * do-while	則是後測迴圈，是在執行 後 測試條件的迴圈*/	
 
+		
 	}
 
 }

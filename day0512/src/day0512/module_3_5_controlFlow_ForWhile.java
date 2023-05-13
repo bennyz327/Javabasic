@@ -103,9 +103,22 @@ public class module_3_5_controlFlow_ForWhile {
 			
 //do-while寫法
 		int ans = (int)(Math.random()*100+1);
-		do{
+game:	do{
 			String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+			if("exit".equals(numStr)==true) {break game;}
+			while(!numStr.matches("\\d*")||numStr.matches("")) {
+	            System.out.println("請輸入數字");
+	            numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+			}
 			int num = Integer.parseInt(numStr);
+			
+//不太會用	try{
+//				String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
+//				int num = Integer.parseInt(numStr);
+//			}catch(java.io.IOException ex) {
+//				ex.printStackTrace() ;
+//			}
+			
 			if(num>ans) {
 				System.out.println("小一點");
 			}

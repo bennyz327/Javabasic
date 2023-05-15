@@ -12,7 +12,7 @@ public class Egg {
 	@Override
 	protected void finalize() throws Throwable {
 		System.out.println("雞蛋已回收");
-		super.finalize();
+//		super.finalize();
 	}
 	
 }

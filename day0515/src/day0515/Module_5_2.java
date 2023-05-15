@@ -45,7 +45,7 @@ public class Module_5_2 {
 //			System.out.println("");
 //		}
 //		
-//遍歷陣列		
+//用for each loop 遍歷陣列	
 //		int[][] arr = new int[5][];
 //		for (int i = 0; i < arr.length; i++) {
 //			int[] a = {i*1,i*2,i*3};
@@ -59,20 +59,20 @@ public class Module_5_2 {
 //		}
 //	
 //反轉陣列後放入新陣列
-		int[][] arr = {{1,2},{3,4},{5,6},{7,8}};
-		int[][] arr_new = new int[arr[0].length][arr.length];	//隨便選一個位置來定義新陣列的範圍
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
-				arr_new[j][i] = arr[i][j];						//放入反轉後的值
-			}
-		}
-		for (int i = 0; i < arr_new.length; i++) {				//印出結果
-			for (int j = 0; j < arr_new[i].length; j++) {
-				System.out.print(arr_new[i][j]);				
-			}
-			System.out.println("");
-		}
-		
+//		int[][] arr = {{1,2},{3,4},{5,6},{7,8}};
+//		int[][] arr_new = new int[arr[0].length][arr.length];	//隨便選一個位置來定義新陣列的範圍
+//		for (int i = 0; i < arr.length; i++) {
+//			for (int j = 0; j < arr[i].length; j++) {
+//				arr_new[j][i] = arr[i][j];						//放入反轉後的值
+//			}
+//		}
+//		for (int i = 0; i < arr_new.length; i++) {				//印出結果
+//			for (int j = 0; j < arr_new[i].length; j++) {
+//				System.out.print(arr_new[i][j]);				
+//			}
+//			System.out.println("");
+//		}	
+
 
 	}
 

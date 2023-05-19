@@ -16,14 +16,17 @@ public class mainTest_2 {
 //		an1.新陳代謝();
 //		//就算an1屬於Fish類別，且於類別中有swim方法，因為是多型宣告仍然會無法使用
 //		//an1.swim();		
-		
-		
-		//instanceof X物件是不是Y類型的物件
+//		
+//instanceof X物件是不是Y類型的物件
 		Animal a=Random_animal.creatAnimal();
 		if(a instanceof Fish) {
 			Fish f;
 			f=(Fish)a;	//強制轉型
 			f.swim();
+		}else {
+			human h;
+			h=(human)a;
+			h.swim();
 		}
 		a.breath();
 	}

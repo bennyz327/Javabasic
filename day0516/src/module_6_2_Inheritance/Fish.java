@@ -8,10 +8,10 @@ public class Fish extends Animal{
 	}
 	
 	public void swim() {
-		System.out.println("可以遊");
+		System.out.println("魚的游泳");
 	}
 	public void eat() {
-		System.out.println("可以吃");
+		System.out.println("魚的吃吃");
 	}
 
 }

@@ -1,7 +1,18 @@
 package module_6_2_Inheritance;
 
 public class mainTest {
+	
+	//一般的block	建立物件的時候會執行一次，走建構方法前會執行這塊
+	{
+		System.out.println("HW");
+	}
+	
+	//static block	類別被呼叫時會執行一次，並且不會執行第二次
+	static {
+		System.out.println("HW static");
+	}
 
+	
 	public static void main(String[] args) {
 		
 		//繼承父類別的子類別創造的物件可以擁有父類別定義的方法

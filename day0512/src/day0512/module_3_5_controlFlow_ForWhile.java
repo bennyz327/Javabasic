@@ -112,13 +112,6 @@ game:	do{
 			}
 			int num = Integer.parseInt(numStr);
 			
-//不太會用	try{
-//				String numStr = JOptionPane.showInputDialog(null,"請輸入數值\n輸入exit可以離開遊戲","1-100猜數字",JOptionPane.INFORMATION_MESSAGE);
-//				int num = Integer.parseInt(numStr);
-//			}catch(java.io.IOException ex) {
-//				ex.printStackTrace() ;
-//			}
-			
 			if(num>ans) {
 				System.out.println("小一點");
 			}

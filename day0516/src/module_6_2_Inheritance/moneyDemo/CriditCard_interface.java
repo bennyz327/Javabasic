@@ -1,4 +1,4 @@
-package module_6_2_Inheritance;
+package module_6_2_Inheritance.moneyDemo;
 
 public interface CriditCard_interface {
 

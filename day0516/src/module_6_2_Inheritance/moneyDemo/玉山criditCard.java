@@ -1,4 +1,4 @@
-package module_6_2_Inheritance;
+package module_6_2_Inheritance.moneyDemo;
 //玉山提款卡
 public class 玉山criditCard implements CriditCard_interface{
 	private String pws="123456";

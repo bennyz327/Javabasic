@@ -7,5 +7,8 @@ public abstract class Animal {
 	public abstract void breath();
 	//只要有任何一個抽象元素在類別中，這個類別就是抽象的
 	
+	public void 新陳代謝() {
+		System.out.println("代謝");
+	};
 
 }

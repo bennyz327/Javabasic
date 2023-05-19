@@ -3,6 +3,7 @@ package module_6_2_Inheritance.moneyDemo;
 public class MainTest {
 
 	public static void main(String[] args) {
+		
 		玉山銀行 m=new 玉山銀行();
 		Banana提款機 b=new Banana提款機();
 		criditCard pC=new criditCard();					//郵局提款卡 
@@ -29,6 +30,7 @@ public class MainTest {
 		 * static方法寫在類別能實體化，會比較好操作
 		 * 
 		 * 介面最好不要帶有任何功能，除非逼不得已*/
+		
 		
 	}
 

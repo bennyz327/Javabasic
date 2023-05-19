@@ -16,7 +16,9 @@ public class mainTest {
 		//無法使用子類別定義的方法
 		//fish02.走失();
 		
-		
+		//調用規則
+		//non-static	=> 	static、non-static(類別內)
+		//static 		=>	static
 		
 	}
 

@@ -8,7 +8,7 @@ public class SetDemo {
 
 	public static void main(String[] args) {
 		
-		Set myset=new HashSet();
+		Set<String> myset=new HashSet<>();
 		myset.add("Apple");
 		myset.add("Banana");
 		myset.add("Cat");
@@ -23,7 +23,7 @@ public class SetDemo {
 //		System.out.println(myset.remove("Cat"));
 //		System.out.println(myset);
 		
-		for (Object object : myset) {				//取出方法用ForEach
+		for (String object : myset) {				//取出方法用ForEach
 			System.out.println(object);
 		}
 		

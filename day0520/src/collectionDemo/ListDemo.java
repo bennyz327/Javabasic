@@ -8,7 +8,7 @@ public class ListDemo {
 
 	public static void main(String[] args) {
 
-		List<String> list1=new ArrayList<>();		//加上泛型
+		List<String> list1=new ArrayList<>();		//加上泛型	//1.7之後，宣告前後不需一致，後面<>的內容可省略
 		list1.add("Apple");
 		list1.add("Banana");
 		list1.add("Cat");

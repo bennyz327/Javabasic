@@ -1,5 +1,6 @@
 package fileDemo;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -9,8 +10,9 @@ public class FileWriterDemo {
 		
 		try(FileWriter fw=new FileWriter("D://java/git/Javabasic/testFolder/fw.txt")) {
 			//比起OutputStream，writer可以直接放字串
-			fw.write("寫入這串");
-			fw.flush();
+			BufferedWriter bw=new BufferedWriter(fw);
+			bw.write("寫入這串");
+			bw.flush();
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
